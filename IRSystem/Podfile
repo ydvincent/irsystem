@@ -2,12 +2,11 @@ platform :ios, '7.0'
 
 inhibit_all_warnings!
 
-abstract_target ‘YE’ do
+abstract_target ‘YEast’ do
 
 pod 'MJExtension'
 pod 'MJRefresh'
 pod 'MBProgressHUD'
-pod 'SDWebImage'
 pod 'IQKeyboardManager'
 pod 'YTKNetwork'
 pod 'DZNEmptyDataSet'
@@ -15,6 +14,7 @@ pod 'SDCycleScrollView'
 pod 'TOWebViewController'
 pod 'Masonry', '~> 1.0.1'
 pod 'UMengAnalytics'    #标准SDK，含IDFA
+pod 'YYKit'
 
 target ‘IRSystem’
 

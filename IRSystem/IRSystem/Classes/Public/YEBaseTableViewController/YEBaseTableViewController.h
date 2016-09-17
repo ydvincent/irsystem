@@ -8,6 +8,14 @@
 
 #import "YEBaseViewController.h"
 
-@interface YEBaseTableViewController : YEBaseViewController
+@interface YEBaseTableViewController : YEBaseViewController<UITableViewDelegate, UITableViewDataSource>
+
+- (instancetype)initWithStyle:(UITableViewStyle)style;
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
+// 是否显示 DZEmptyData
+@property (nonatomic, assign) BOOL showEmptyDataSet;
 
 @end

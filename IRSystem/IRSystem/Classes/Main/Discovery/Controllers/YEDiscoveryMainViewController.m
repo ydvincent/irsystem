@@ -8,6 +8,8 @@
 
 #import "YEDiscoveryMainViewController.h"
 
+#import "YEGetDiscoveyListApi.h"
+
 @interface YEDiscoveryMainViewController ()
 
 @end
@@ -16,22 +18,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self requestDiscoveyList];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - API
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)requestDiscoveyList
+{
+    [self.view showHUD];
+    YEGetDiscoveyListApi *api =[[YEGetDiscoveyListApi alloc] init];
+    
+    [api startRequest:^(YERequestStatus responseStatus, NSString *message, id responseObject) {
+        
+        [self.view hideHUD];
+        if (responseStatus == YERequestStatusSuccess) {
+            
+        } else {
+            
+        }
+    }];
 }
-*/
 
 @end

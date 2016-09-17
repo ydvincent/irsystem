@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="YEHomeCellHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同城头条" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-Dv-ZrC">
+                    <rect key="frame" x="15" y="16.5" width="52" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.98823535439999999" green="0.61960786580000005" blue="0.18823531269999999" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="3ZX-iX-JtB">
+                    <rect key="frame" x="300" y="19" width="7" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="JW7-Me-FdV"/>
+                        <constraint firstAttribute="height" constant="12" id="zhC-bZ-xPJ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2U-Sb-FjH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <connections>
+                        <action selector="disclosureIndicatorBtnClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8MO-1N-YHV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3ZX-iX-JtB" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Hln-gA-sAc"/>
+                <constraint firstAttribute="trailing" secondItem="t2U-Sb-FjH" secondAttribute="trailing" id="RK0-BY-FdF"/>
+                <constraint firstAttribute="trailing" secondItem="3ZX-iX-JtB" secondAttribute="trailing" constant="13" id="UuF-Ii-5Uy"/>
+                <constraint firstItem="t2U-Sb-FjH" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="fAP-is-hfa"/>
+                <constraint firstItem="Ykj-Dv-ZrC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="jxS-JB-xfz"/>
+                <constraint firstAttribute="bottom" secondItem="t2U-Sb-FjH" secondAttribute="bottom" id="mL3-vm-fUf"/>
+                <constraint firstItem="Ykj-Dv-ZrC" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="mTX-0S-EGv"/>
+                <constraint firstItem="t2U-Sb-FjH" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="yQR-ux-Jwg"/>
+            </constraints>
+            <connections>
+                <outlet property="arrowImgView" destination="3ZX-iX-JtB" id="87L-os-F2p"/>
+                <outlet property="titleLabel" destination="Ykj-Dv-ZrC" id="8hY-5q-pJR"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="202"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="7" height="12"/>
+    </resources>
+</document>

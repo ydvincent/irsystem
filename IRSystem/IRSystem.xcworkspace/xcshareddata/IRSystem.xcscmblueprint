@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E2DC31E6FDF51DC4B89B7FA999B46B69247C8624",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a20206c0-b416-d24c-a15f-a3fac154ad00" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a20206c0-b416-d24c-a15f-a3fac154ad00" : 0,
+    "E2DC31E6FDF51DC4B89B7FA999B46B69247C8624" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC6051D9-5D8C-4ED1-97C8-9546F033E855",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a20206c0-b416-d24c-a15f-a3fac154ad00" : "",
+    "E2DC31E6FDF51DC4B89B7FA999B46B69247C8624" : "IRSystem\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IRSystem",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IRSystem\/IRSystem.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ydvincent\/irsystem.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2DC31E6FDF51DC4B89B7FA999B46B69247C8624"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/114.55.253.28\/svn\/irsystem",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a20206c0-b416-d24c-a15f-a3fac154ad00"
+    }
+  ]
+}

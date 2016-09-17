@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Vincent. All rights reserved.
 //
 
-#import "YEBaseTableViewController.h"
+#import "YEBaseViewController.h"
 
-@interface YEHomeViewController : YEBaseTableViewController
+@interface YEHomeViewController : YEBaseViewController
 
 @end

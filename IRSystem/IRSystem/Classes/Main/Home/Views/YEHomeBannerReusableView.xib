@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="YEHomeBannerReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QS4-MX-Uve" customClass="SDCycleScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QS4-MX-Uve" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="9Vy-Yo-RQN"/>
+                <constraint firstAttribute="trailing" secondItem="QS4-MX-Uve" secondAttribute="trailing" id="YjQ-FZ-62u"/>
+                <constraint firstAttribute="bottom" secondItem="QS4-MX-Uve" secondAttribute="bottom" id="vww-el-V7V"/>
+                <constraint firstItem="QS4-MX-Uve" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="zb1-8X-WDk"/>
+            </constraints>
+            <connections>
+                <outlet property="cycleView" destination="QS4-MX-Uve" id="2YY-sk-pLc"/>
+            </connections>
+            <point key="canvasLocation" x="148" y="52.5"/>
+        </collectionReusableView>
+    </objects>
+</document>
